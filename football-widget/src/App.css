@@ -27,4 +27,25 @@
   background-color: white;
 }
 
+.menuBar {
+  background-color: rgb(38, 36, 61);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+}
 
+.menuButton {
+  height: 50px;
+  border: none;
+  background-color: rgb(38, 36, 61);
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.generalButton {
+  background-color: rgb(216, 216, 37);
+  color: black;
+  width: 130px;
+}

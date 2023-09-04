@@ -4,11 +4,11 @@ const Menu = () => {
         <>
         <h2>
         <ul className="menuBar">
-            <li><button>Overview</button></li>
-            <li><button>General</button></li>
-            <li><button>ARS</button></li>
-            <li><button>FUL</button></li>
-            <li><button>Player</button></li>
+            <li><button className="menuButton">Overview</button></li>
+            <li><button className="menuButton generalButton">General</button></li>
+            <li><button className="menuButton">ARS</button></li>
+            <li><button className="menuButton">FUL</button></li>
+            <li><button className="menuButton">Player</button></li>
         </ul>
         </h2>
         </>
