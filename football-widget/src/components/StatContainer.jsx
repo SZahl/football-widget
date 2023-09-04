@@ -6,6 +6,11 @@ const StatContainer = ({ data }) => {
 
     const [matchTime, setMatchTime] = useState("FT")
 
+    const handleClick = (event) => {
+        event.preventDefault();
+        setMatchTime(event.target.value)
+    }
+
     const FT = {
         possession: {
             away: `${data.liveData.lineups.away.stats[5].value}%`,
@@ -79,9 +84,9 @@ const StatContainer = ({ data }) => {
         General
         </h3>
         <form className="statButtons">
-            <button className="statContainerButton" onClick={() => setMatchTime("FT")} value="FT">Full Time</button>
-            <button className="statContainerButton" onClick={() => setMatchTime("FH")} value="FH">1st Half</button>
-            <button className="statContainerButton" onClick={() => setMatchTime("SH")}value="SH">2nd Half</button>
+            <button className="statContainerButton" onClick={handleClick} value="FT">Full Time</button>
+            <button className="statContainerButton" onClick={handleClick} value="FH">1st Half</button>
+            <button className="statContainerButton" onClick={handleClick}value="SH">2nd Half</button>
         </form>
         Possession<SingleStat matchData={FT.possession}/>
         Shots<SingleStat matchData={FT.shots}/>
