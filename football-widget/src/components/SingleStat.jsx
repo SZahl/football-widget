@@ -1,9 +1,10 @@
 
-const SingleStat = () => {
+const SingleStat = ({ matchData }) => {
+
     return (
-        <>
-        Hello from SingleStat!
-        </>
+        <div className="singleStat">
+        Home: {matchData.home} Away: {matchData.away}
+        </div>
     )
 }
 

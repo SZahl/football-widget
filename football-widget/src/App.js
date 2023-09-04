@@ -8,7 +8,6 @@ import StatContainer from './components/StatContainer';
 function App() {
   const [footballData, setFootballData] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const [matchTime, setMatchTime] = useState("FT");
 
   useEffect(() => {
     setIsLoading(true);
@@ -16,7 +15,7 @@ function App() {
       setIsLoading(false);
       setFootballData(response.data.match);
     });
-  }, [matchTime]);
+  }, []);
 
   if (isLoading) {
     return <h3>Info loading...</h3>;
@@ -26,7 +25,7 @@ function App() {
     <div className="App">
       <Header data={footballData}/>
       <Menu />
-      <StatContainer />
+      <StatContainer data={footballData}/>
 
 
     </div>

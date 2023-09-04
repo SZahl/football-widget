@@ -1,16 +1,11 @@
 
 const Header = ({ data }) => {
 
-    const stats = data;
     const league = data.meta.competition.name;
     const homeTeam = data.contestant[0].name;
     const awayTeam = data.contestant[1].name;
     const homeScore = data.liveData.matchDetails.scores.total.home;
     const awayScore = data.liveData.matchDetails.scores.total.away;
-
-    // console.log('stats', stats)
-    // console.log('team', homeTeam)
-
 
     return (
         <>

@@ -49,3 +49,30 @@
   color: black;
   width: 130px;
 }
+
+.statContainer {
+  background-color: rgb(63, 59, 102);
+  font-size: 18px;
+}
+
+.statButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.statContainerButton {
+  border: none;
+  border-radius: 30px;
+  padding: 16px;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.statContainerButton:hover {
+  background-color: rgb(216, 216, 37);
+}
+
+.singleStat {
+  margin: 30px;
+}
